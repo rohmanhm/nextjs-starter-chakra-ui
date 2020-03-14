@@ -15,7 +15,7 @@ const httpServer = micro(
       nextApplication.serveStatic(
         req,
         res,
-        `${process.cwd()}/.next/service-worker.js`
+        `${process.cwd()}/.next/public/service-worker.js`
       )
     ),
 

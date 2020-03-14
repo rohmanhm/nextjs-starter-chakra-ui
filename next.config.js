@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/explicit-function-return-type */
+
 const withPlugins = require('next-compose-plugins')
 const withOffline = require('next-offline')
 const withBundleAnalyzer = require('@next/bundle-analyzer')
@@ -12,6 +14,9 @@ const offline = [
     generateInDevMode: false,
     transformManifest: manifest => ['/'].concat(manifest), // add the homepage to the cache
     workboxOpts: {
+      swDest: process.env.NEXT_EXPORT
+        ? 'service-worker.js'
+        : 'static/service-worker.js',
       runtimeCaching: [
         {
           urlPattern: /^https?.*/,
@@ -35,4 +40,16 @@ const offline = [
 
 const plugins = [bundleAnalyzer, offline]
 
-module.exports = withPlugins(plugins, {})
+module.exports = withPlugins(plugins, {
+  poweredByHeader: false,
+  experimental: {
+    async rewrites() {
+      return [
+        {
+          source: '/service-worker.js',
+          destination: '/_next/static/service-worker.js',
+        },
+      ]
+    },
+  },
+})
