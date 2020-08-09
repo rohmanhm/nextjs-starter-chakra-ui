@@ -17,11 +17,11 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "extends": [
-    "plugin:react/recommended",
     "standard",
-    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
     "react/prop-types": 0,
