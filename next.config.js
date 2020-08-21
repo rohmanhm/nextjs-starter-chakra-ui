@@ -11,9 +11,11 @@ const bundleAnalyzer = withBundleAnalyzer({
 const offline = [
   withOffline,
   {
-    generateInDevMode: false,
-    transformManifest: manifest => ['/'].concat(manifest), // add the homepage to the cache
+    target: 'serverless',
+    dontAutoRegisterSw: true,
+    transformManifest: (manifest) => ['/'].concat(manifest), // add the homepage to the cache
     workboxOpts: {
+      swDest: 'static/service-worker.js',
       runtimeCaching: [
         {
           urlPattern: /^https?.*/,

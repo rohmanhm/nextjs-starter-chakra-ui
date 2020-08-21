@@ -15,18 +15,18 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
   "extends": [
-    "standard",
+    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended"
+    "standard",
+    "plugin:prettier/recommended"
   ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "react/prop-types": 0,
     "prettier/prettier": "error",
-    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/member-delimiter-style": 0,
     "@typescript-eslint/no-explicit-any": 0
   }
