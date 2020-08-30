@@ -2,7 +2,7 @@
 
 ## More
 
-- [with-tailwindcss](https://github.com/rohmanhm/nextjs-starter/tree/with-tailwindcss)
+- [nextjs-starter-tailwind](https://github.com/rohmanhm/nextjs-starter-tailwind)
 
 ## Why
 
