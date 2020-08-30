@@ -6,7 +6,7 @@ const IndexPage = () => {
     <div>
       hello world
       <br />
-      <Button>Click me</Button>
+      <Button onClick={() => alert('Hi')}>Click me</Button>
     </div>
   )
 }
