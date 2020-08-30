@@ -13,6 +13,10 @@
 /out
 .next*
 
+# next-pwa
+/public/sw.js
+/public/workbox-*
+
 # misc
 .DS_Store
 .env.local
