@@ -4,6 +4,22 @@
 
 - [nextjs-starter-tailwind](https://github.com/rohmanhm/nextjs-starter-tailwind)
 
+## How to run
+
+1. Install the dependencies.
+
+```bash
+yarn install
+```
+
+2. Run the app
+
+```bash
+yarn dev
+```
+
+3. Verify by visiting this URL. [http://localhost:3000/chakra-ui](http://localhost:3000/chakra-ui)
+
 ## Why
 
 - **Commitlint**: For the conventional commits. [Why Use Conventional Commits
