@@ -1,8 +1,10 @@
-# Nextjs Starter by RohmanHM
+# Nextjs Starter
 
 ## More
 
-- [nextjs-starter-tailwind](https://github.com/rohmanhm/nextjs-starter-tailwind)
+- [nextjs-starter](https://github.com/rohmanhm/nextjs-starter) - `The original template version`
+- [nextjs-starter-tailwind](https://github.com/rohmanhm/nextjs-starter-tailwind) - `Add tailwindcss support out of the box`
+- [nextjs-starter-chakra-ui](https://github.com/rohmanhm/nextjs-starter-chakra-ui) - `Add chakra-ui support out of the box`
 
 ## How to run
 
@@ -27,12 +29,6 @@ yarn dev
 
 ## Scripts
 
-### Commit to Git
-
-```bash
-yarn commit
-```
-
 ### Build
 
 ```bash
@@ -44,3 +40,7 @@ yarn build
 ```bash
 yarn build-analyze
 ```
+
+## License
+
+**MIT - @rohmanhm**
