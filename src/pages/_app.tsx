@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
-import React from 'react'
+import React, { FC } from 'react'
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
