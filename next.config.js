@@ -15,7 +15,7 @@ const pwa = withPWA({
   },
 })
 
-const plugins = [bundleAnalyzer, pwa]
+const plugins = [[bundleAnalyzer({})], pwa]
 
 module.exports = withPlugins(plugins, {
   poweredByHeader: false,
