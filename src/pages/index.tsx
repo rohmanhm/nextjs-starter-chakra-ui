@@ -1,16 +1,20 @@
-import { Button } from '@chakra-ui/react'
+import { Button, useColorMode } from '@chakra-ui/react'
 import Head from 'next/head'
 import React from 'react'
 
 const IndexPage = () => {
+  const { toggleColorMode } = useColorMode()
   return (
     <div>
       <Head>
         <title>Hello World</title>
       </Head>
-      hello world
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur,
+      provident vel fugit explicabo quam fugiat asperiores commodi sapiente
+      nostrum voluptates ipsam veniam expedita itaque nobis quos cupiditate
+      necessitatibus molestias vero!
       <br />
-      <Button onClick={() => alert('Hi')}>Click me</Button>
+      <Button onClick={toggleColorMode}>Toggle Mode</Button>
     </div>
   )
 }
