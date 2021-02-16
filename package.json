@@ -13,7 +13,8 @@
     "check-formatting": "prettier --list-different 'src/**/*.{ts,tsx}'",
     "cm": "cz --disable-emoji",
     "clean-build": "rm -rf out .next*",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "release": "standard-version"
   },
   "dependencies": {
     "next": "^10.0.6",
@@ -50,6 +51,7 @@
     "next-pwa": "^5.0.5",
     "prettier": "^2.2.1",
     "sass": "^1.32.7",
+    "standard-version": "^9.1.0",
     "typescript": "^4.1.5",
     "webpack": "4.46.0"
   },
