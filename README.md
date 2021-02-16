@@ -1,5 +1,7 @@
 # Nextjs Starter
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ## More
 
 - [nextjs-starter](https://github.com/rohmanhm/nextjs-starter) - `The original template version`

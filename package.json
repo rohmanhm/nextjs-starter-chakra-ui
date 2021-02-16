@@ -11,7 +11,7 @@
     "build": "next build",
     "build-analyze": "cross-env ANALYZE=true next build",
     "check-formatting": "prettier --list-different 'src/**/*.{ts,tsx}'",
-    "commit": "git-cz",
+    "cm": "cz --disable-emoji",
     "clean-build": "rm -rf out .next*",
     "postinstall": "husky install"
   },
