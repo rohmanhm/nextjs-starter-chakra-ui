@@ -19,8 +19,7 @@
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
-      "#/*": ["./src/*"],
-      "~/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
   "exclude": ["node_modules"],

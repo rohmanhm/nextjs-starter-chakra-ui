@@ -1,4 +1,4 @@
-import theme from '#/theme'
+import theme from '@/theme'
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
 import React, { FC } from 'react'
