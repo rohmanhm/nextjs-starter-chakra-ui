@@ -3,6 +3,11 @@
     "browser": true,
     "es6": true
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -16,12 +21,12 @@
     "sourceType": "module"
   },
   "extends": [
-    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "standard",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "next"
   ],
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {

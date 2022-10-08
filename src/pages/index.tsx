@@ -1,6 +1,5 @@
 import { Button, useColorMode } from '@chakra-ui/react'
 import Head from 'next/head'
-import React from 'react'
 
 const IndexPage = () => {
   const { toggleColorMode } = useColorMode()

@@ -1,5 +1,14 @@
 {
   "singleQuote": true,
   "semi": false,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "importOrder": [
+    "^(^react$|@react|react)",
+    "<THIRD_PARTY_MODULES>",
+    "^@/(.*)$",
+    "^[./]"
+  ],
+  "importOrderGroupNamespaceSpecifiers": true,
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
