@@ -26,6 +26,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "standard",
     "plugin:react-hooks/recommended",
+    "prettier",
     "next"
   ],
   "plugins": ["react", "@typescript-eslint", "prettier"],
