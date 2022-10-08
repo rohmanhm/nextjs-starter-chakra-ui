@@ -1,10 +1,10 @@
-import React, { HTMLAttributes } from 'react'
+import { HTMLAttributes, PropsWithChildren } from 'react'
+
 import styles from './Button.module.scss'
 
-export const Button: React.FC<HTMLAttributes<HTMLButtonElement>> = ({
-  children,
-  ...props
-}) => {
+type ButtonProps = PropsWithChildren<HTMLAttributes<HTMLButtonElement>>
+
+export const Button = ({ children, ...props }: ButtonProps) => {
   return (
     <button {...props} className={styles.default}>
       {children}
